@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios'
 import { Redirect } from 'react-router'
+import { Button } from 'bloomer'
 
 class ToyList extends Component {
 
@@ -47,7 +48,7 @@ class ToyList extends Component {
                   )
                 }
               </ul>
-              <button onClick={this.onAddClick}>Ajouter un jouet</button>
+              <Button isColor='info' isSize='large' onClick={this.onAddClick}>Ajouter un jouet</Button>
             </div>
         )
       } else {
@@ -59,7 +60,7 @@ class ToyList extends Component {
               <br />
               Cordialement, La Direction.
               <br />
-              <button href="/add">Ajouter</button>
+              <Button isColor='info' isSize='large' onClick={this.onAddClick}>Ajouter un jouet</Button>
             </div>
         )
       }
