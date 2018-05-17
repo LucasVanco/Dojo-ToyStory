@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import logo from './assets/logo.png';
 import ToyList from './components/ToyList'
+import AddToy from './components/AddToy'
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={ToyList} />
+            <Route path="/add" component={AddToy} />
           </div>
         </Router>
       </div>
