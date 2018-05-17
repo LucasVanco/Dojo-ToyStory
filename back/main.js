@@ -11,6 +11,11 @@ app.use(bodyParser.json())
 app.use(morgan('dev'))
 app.use(cors())
 
+app.get('/toy', (req, res) => {
+})
+app.post('/toy', (req, res) => {
+})
+
 app.listen(PORT, function () {
   console.log('Example app listening on port ' + PORT + '!')
 })
